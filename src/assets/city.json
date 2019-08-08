@@ -1,0 +1,52 @@
+[
+    {
+        "sno": "1",
+        "stateId":"1",
+        "name": "hyderabad"
+    },
+    {
+        "sno": "2",
+        "stateId":"6",
+        "name": "bengalur"
+    },
+    {
+        "sno": "3",
+        "stateId":"1",
+        "name": "manthani"
+    },
+    {
+        "sno": "4",
+        "stateId":"1",
+        "name": "godavarikhani"
+    },
+    {
+        "sno": "5",
+        "stateId":"5",
+        "name": "delhi"
+    },
+    {
+        "sno": "6",
+        "stateId":"1",
+        "name": "karnataka"
+    },
+    {
+        "sno": "7",
+        "stateId":"4",
+        "name": "mumbai"
+    },
+    {
+        "sno": "8",
+        "stateId":"8",
+        "name": "assam"
+    },
+    {
+        "sno": "9",
+        "stateId":"9",
+        "name": "chathisghad"
+    },
+    {
+        "sno": "10",
+        "stateId":"10",
+        "name": "oddisa"
+    }
+]

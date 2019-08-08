@@ -1,0 +1,52 @@
+[
+    {
+        "sno": "1",
+        "countryId":"1",
+        "name": "telangana"
+    },
+    {
+        "sno": "2",
+        "countryId":"1",
+        "name": "andhrapradesh"
+    },
+    {
+        "sno": "3",
+        "countryId":"1",
+        "name": "uttarpradesh"
+    },
+    {
+        "sno": "4",
+        "countryId":"1",
+        "name": "madhyapradesh"
+    },
+    {
+        "sno": "5",
+        "countryId":"1",
+        "name": "delhi"
+    },
+    {
+        "sno": "6",
+        "countryId":"2",
+        "name": "karnataka"
+    },
+    {
+        "sno": "7",
+        "countryId":"2",
+        "name": "mumbai"
+    },
+    {
+        "sno": "8",
+        "countryId":"2",
+        "name": "assam"
+    },
+    {
+        "sno": "9",
+        "countryId":"2",
+        "name": "chathisghad"
+    },
+    {
+        "sno": "10",
+        "countryId":"2",
+        "name": "oddisa"
+    }
+]

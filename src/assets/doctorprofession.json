@@ -1,0 +1,19 @@
+[
+    {
+        "sno": "1",
+        "name": "Physician"
+    },
+    {
+        "sno": "2",
+        "name": "Dentist"
+    },
+    {
+        "sno": "3",
+        "name": "Optometrist"
+    },
+    {
+        "sno": "4",
+        "name": "Nurse"
+    }
+   
+]

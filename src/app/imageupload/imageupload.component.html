@@ -1,0 +1,19 @@
+<!-- <p>
+  imageupload works!
+</p>
+<input type="file" name="" id="" (change)="onselectedimage($event)">
+<button (click)="onupload()">Upload</button> -->
+<!-- 
+<input
+  style="display: none"
+  type="file" (change)="onFileChanged($event)"
+  #fileInput>
+<button (click)="fileInput.click()">Select File</button>
+<button (click)="onUpload()">Upload!</button> -->
+<input type="file" (change)="upload($event.target.files)" />
+    Upload Percent: {{percentDone}}% <br />
+    
+    <ng-container *ngIf="uploadSuccess">
+      Upload Successful
+    </ng-container> 
+    <img [src]="imgURL" height="200" *ngIf="imgURL">

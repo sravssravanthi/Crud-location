@@ -1,0 +1,85 @@
+[
+    {
+        "sno": "1",
+        "profession":1,
+        "name": "General Physician"
+    },
+    {
+        "sno": "2",
+        "profession":1,
+        "name": "Neuromuscular medicine"
+    },
+    {
+        "sno": "3",
+        "profession":1,
+        "name": "Pediatricians "
+    },
+    {
+        "sno": "4",
+        "profession":1,
+        "name": "Spinal cord injury"
+    },
+    {
+        "sno": "5",
+        "profession":1,
+        "name": "Endodontics"
+    },
+    {
+        "sno": "6",
+        "profession":2,
+        "name": "Dental Anesthesiology"
+    },
+    {
+        "sno": "7",
+        "profession":2,
+        "name": "Pediatric Dentistry"
+    },
+    {
+        "sno": "8",
+        "profession":2,
+        "name": "Periodontics"
+    },
+    {
+        "sno": "9",
+        "profession":3,
+        "name": "Endodontics"
+    },
+    {
+        "sno": "10",
+        "profession":3,
+        "name": "Dental Anesthesiology"
+    },
+    {
+        "id": "11",
+        "profession":3,
+        "name": "Pediatric Dentistry"
+    },
+    {
+        "id": "12",
+        "proffessionId":3,
+        "name": "Periodontics"
+    },
+    {
+        "id": "13",
+        "proffessionId":4,
+        "name": "Ophthalmologist"
+    },
+    {
+        "id": "14",
+        "proffessionId":4,
+        "name": "Optician"
+    },
+    {
+        "id": "15",
+        "proffessionId":4,
+        "name": "Vision therapist"
+    },
+    {
+        "id": "16",
+        "proffessionId":4,
+        "name": "Optometrist"
+    }
+   
+   
+   
+]

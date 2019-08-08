@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <form action="">
+          <select name="country" id="country" class="form-control"    [(ngModel)]="formdata.country" data-title="Search Here" (change)="getCountryStates()">
+              <option 
+              [ngValue]="null">Select Country</option>
+            <option value="select" selected>Select</option>  <option *ngFor="let row of data" value="{{row.sno}}">{{row.name}}</option>Select
+            </select>
+        <select name="state" id="state" class="form-control"  [(ngModel)]="formdata.state" (change)="getStateCities()">
+          <option *ngFor="let row of data1" value="{{row.sno}}">{{row.name}}</option>
+        </select>
+        <select name="city" id="city" class="form-control" [(ngModel)]="formdata.city">
+            <option *ngFor="let row of data2" value="">{{row.name}}</option>
+          </select>
+          <div class="row">
+
+              <div class="col-md-6 form-group">
+                <label for="">Profession</label>
+                <select class="form-control" name="profession"
+                  [(ngModel)]="doctordata.profession" (change)="getProfessionSpeciality()">
+                  <option *ngFor="let row of professiondata" value="{{row.sno}}">{{row.name}}</option>
+
+
+                </select>
+              </div>
+              <div class="col-md-6 form-group">
+                <label for="">Speciality</label>
+                <select name="speciality" class="form-control"
+                  [(ngModel)]="doctordata.speciality">
+                  <option  *ngFor="let item of specialitydata">{{item.name}}</option>
+                </select>
+
+              </div>
+            </div>
+      </form>
+    </div>
+  </div>
+</div>

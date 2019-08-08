@@ -1,0 +1,223 @@
+<p>Restricted size with rotation and no ellipses:</p>
+<ngb-pagination [collectionSize]="120" [(page)]="page" [maxSize]="5" [rotate]="true" [ellipses]="false" [boundaryLinks]="true"></ngb-pagination>
+<div class="form-group">
+  <label for="options">Options:</label>
+  <div *ngFor="let option of options; let i=index">
+    <label for="">
+      <input type="checkbox" name="{{option.name}}" value="{{option.value}}" [(ngModel)]="option.checked" >{{option.name}}
+    </label>
+  </div>
+  <button (click)="dataPass()">Submit</button>
+</div>
+
+<form #checkboxForm="ngForm" (submit)="editPartyRolesSubmit()">
+  <div *ngFor="let item of PartyRoles">
+      <label>
+      <input type="checkbox" value="{{item.Id}}" [(ngModel)]="item.Checked" [name]="item.Name" [attr.disabled]="item.Id==1 ? true : null" />
+      <span innerHTML="{{item.Name}}"></span>
+  </label>
+  </div>
+  <input type="submit" value="Submit">
+</form>
+<div class="form-group">
+  <div class="form-control">
+    <label for="" class="checkbox-inline">
+      <input type="checkbox" name="glaucoma" id="glaucoma" value="glaucoma" [(ngModel)]="glaucoma" (change)="onchecked($event,'Glaucoma')">Glaucoma
+    </label>
+  </div>
+</div>
+
+<form>
+  
+  
+<div class="row">
+  <div class="col-md-2"> <b><label>Blood Group</label></b></div>
+  <div class="col-md-8">
+    <div class="form-group">
+
+      <select class="form-control" name="bloodgroup" id="bloodgroup" [(ngModel)]="inputdata.bloodgroup">
+        <option>Select</option>
+        <input type="checkbox" name="" id=""><option>A+</option>
+        <option><input type="checkbox" name="" id="">B+</option>
+        <option>AB+</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>B-</option>
+        <option>AB-</option>
+
+      </select>
+
+    </div>
+  </div>
+
+</div>
+<div class="row">
+  <div class="col-md-3"><b><label for="">Gender</label></b></div>
+  <div class="col-md-8">
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="gender" value="male" [(ngModel)]="inputdata.gender"> Male
+
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="gender" value="female" [(ngModel)]="inputdata.gender"> Female
+
+
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="gender" value="other" [(ngModel)]="inputdata.gender"> other
+
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-6"><b><label for="">Do you want to register a Minor on to your
+          account?</label></b></div>
+    <div class="col-md-6">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="minor" value="yes" [(ngModel)]="inputdata.minor"  >
+        Yes
+
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="minor" value="No" [(ngModel)]="inputdata.minor"
+        > No
+      </div>
+    </div>
+  </div>
+  <div class="minor" *ngIf="inputdata.minor==='yes'">
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <label for="">FirstName</label>
+        <input type="text" class="form-control" id="minorfirstname" name="minorfirstname" placeholder="Enter FirstName" [(ngModel)]="inputdata.minorfirstname"/>
+      </div>
+      <div class="col-md-6 form-group">
+        <label for="">MiddleName</label>
+        <input type="text" class="form-control" id="middlename" name="middlename" placeholder="Enter tName" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <label for="">LastName</label>
+        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter LastName" />
+      </div>
+      <div class="col-md-6">
+        <label for="">Gender</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="male" [value]="true" [(ngModel)]="male" [checked]="male">
+          Male
+
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="male" [value]="false" [(ngModel)]="male" [checked]="!male">
+          Female
+
+
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <label for="">Date of Birth</label>
+        <input type="date" class="form-control" id="dateofbirth" name="dateofbirth" placeholder="dd/mm/yyyy" />
+      </div>
+      <div class="col-md-6 form-group">
+        <label for="">Contact Number</label>
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Contact Number" />
+      </div>
+    </div>
+  </div>
+
+</div>
+<button type="submit" (click)="genderfun()">Submit</button>
+
+<div id="myNav" class="overlay" *ngIf="displayNav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<h2>Fullscreen Overlay Nav Example</h2>
+<p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+<p>In this example, the navigation menu will slide in, from left to right:</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+
+
+
+
+<button (click)="toggle()" id="bt">
+  menu
+</button>
+
+<ng-container *ngIf="show">
+  <div style="margin: 0 auto;text-align: left;">
+    <!-- <div class="overlay-content"> -->
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+    <!-- </div> -->
+  </div>
+</ng-container>
+
+<div class="container-fluid">
+  <div class="container">
+    <div class="row mt-5">
+
+      <div class="col-md-3">
+        <h4>Registraion</h4>
+        <form>
+          <div class="form-group">
+            Name:<input type="text" class="form-control" placeholder="Enter name" name="name"
+              [(ngModel)]="inputdata.name">
+            Phone:<input type="text" class="form-control" placeholder="Enter phone" name="phone"
+              [(ngModel)]="inputdata.phone">
+            Email:<input type="email" class="form-control" placeholder="Enter email" name="email"
+              [(ngModel)]="inputdata.email">
+          </div>
+          <button class="btn btn-success" (click)="submit()">Submit</button>
+
+        </form>
+      </div>
+      <div class="col-md-9">
+        <table class="table table-bordered table-stripped">
+          <thead>
+            <tr>
+              <th>s.no</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of data">
+              <td>{{item.id}}</td>
+              <td>{{item.name}}</td>
+              <td>{{item.email}}</td>
+              <td>{{item.phone}}</td>
+              <td>
+                <button class="btn-sm btn-primary mr-1" [routerLink]="['/view']"
+                  routerLinkActive="router-link-active">View</button>
+                <button class="btn-sm btn-success mr-1" [routerLink]="['/edit',item.id]">Edit</button>
+                <button class="btn-sm btn-danger mr-1" (click)="delete(item.id)">Delete</button>
+              </td>
+            </tr>
+
+          </tbody>
+
+
+
+
+
+
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

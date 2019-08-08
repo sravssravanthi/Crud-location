@@ -1,0 +1,71 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="row mt-5">
+
+      <div class="col-md-3">
+        <h4>Registraion</h4>
+        <!-- <form>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter name" name="name"
+              [(ngModel)]="inputdata.allergies">
+            <input type="text" class="form-control" placeholder="Enter phone" name="phone"
+              [(ngModel)]="inputdata.reaction">
+            
+          </div>
+          <button class="btn btn-success" (click)="add()">Add</button>
+
+        </form> -->
+      </div>
+      <div class="col-md-9">
+        <table class="table table-bordered table-stripped">
+          <thead>
+            <tr>
+              <th>s.no</th>
+              <th>Allergies</th>
+              <th>Reaction</th>
+              
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              
+            </tr>
+            <tr *ngFor="let item of allergydata">
+              <td>{{item.id}}</td>
+              <td>{{item.allergies}}</td>
+              <td>{{item.reaction}}</td>
+               <td>
+                
+                 
+                <button class="btn-sm btn-danger mr-1" (click)="delete(item.id)">Delete</button>
+               </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text" class="form-control" placeholder="Enter name" name="name"
+                  [(ngModel)]="inputdata.allergies"></td>
+                <td><input type="text" class="form-control" placeholder="Enter phone" name="phone"
+                  [(ngModel)]="inputdata.reaction"></td>
+                  <td><button class="btn btn-success" (click)="add()">Add</button></td>
+            </tr>
+              
+              <!-- <td> -->
+                
+                <!-- <button class="btn-sm btn-success mr-1" [routerLink]="['/edit',item.id]">Edit</button> -->
+                <!-- <button class="btn-sm btn-danger mr-1" (click)="delete(item.id)">Delete</button> -->
+              <!-- </td> -->
+            <!-- </tr> -->
+
+          </tbody>
+
+
+
+
+
+
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+{
+  "data": [
+    {
+      "name": "sravs12345",
+      "email": "renuka@gmail.com",
+      "phone": "8919729886",
+      "id": 3
+    },
+    {
+      "name": "sravan",
+      "email": "sravsladdu@gmail.com",
+      "phone": "909943555",
+      "id": 5
+    },
+    {
+      "name": "ashwitha",
+      "email": "ashwitha@gmail.com",
+      "phone": "89344567888",
+      "id": 7
+    },
+    {
+      "name": "ashwitha",
+      "email": "ashwitha@gmail.com",
+      "phone": "89344567888",
+      "id": 8
+    },
+    {
+      "name": "ashwitha",
+      "email": "ashwitha@gmail.com",
+      "phone": "8919729886",
+      "id": 9
+    },
+    {
+      "name": "harshini",
+      "email": "harshini@gmail.com",
+      "phone": "6776585888",
+      "id": 10
+    },
+    {
+      "name": "harshini",
+      "email": "harshini@gmail.com",
+      "phone": "6776585888",
+      "id": 11
+    },
+    {
+      "name": "sravanthi",
+      "email": "vadlakondasravanthi5577@gmail.com",
+      "phone": "8919729886",
+      "id": 12
+    },
+    {
+      "name": "ravikrishna",
+      "email": "ravi@gmail.com",
+      "phone": "89344567888",
+      "id": 13
+    },
+    {
+      "name": "ravikrishna",
+      "email": "renuka@gmail.com",
+      "phone": "909943555",
+      "id": 14
+    },
+    {
+      "allergies": "sravs",
+      "reaction": "8919729886",
+      "id": 15
+    }
+  ],
+  "allergies": [
+    {
+      "allergies": "Antibiotics",
+      "reaction": "Rashes",
+      "id": 1
+    },
+    {
+      "allergies": "sravs",
+      "reaction": "8919729886",
+      "id": 2
+    }
+  ]
+}
